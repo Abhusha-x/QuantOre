@@ -2299,19 +2299,7 @@
                     return index > -1 ? rainData.data[index] : null;
                 });
 
-                // Add Rain dataset (River Discharge)
-                datasets.push({
-                    type: 'line',
-                    label: 'Mean River Discharge (m³/s)',
-                    data: alignedRainData,
-                    borderColor: '#00E5FF', // Neon Cyan
-                    backgroundColor: 'rgba(0, 229, 255, 0.1)', // Light fill
-                    fill: true,
-                    tension: 0.2,
-                    pointRadius: 0,
-                    yAxisID: 'y1', // Secondary Y-axis for Rain
-                    order: 1 // Draw the rain line behind the stock line
-                });
+
 
                 // Add secondary Y-axis configuration
                 axisConfig.y1 = {
